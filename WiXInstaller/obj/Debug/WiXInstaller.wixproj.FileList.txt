@@ -1,0 +1,11 @@
+\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\WiXInstaller\bin\Debug\APIManagerInstaller.msi
+\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
+\\Mac\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\WiXInstaller\bin\Debug\APIManagerInstaller.msi
+\\Mac\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP\WiXInstaller\bin\Debug\APIManagerInstaller.msi
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
+obj\\Debug\Files.wixobj
+obj\\Debug\Setup.wixobj
+obj\\Debug\WiXInstaller.wixproj.BindContentsFileListnull.txt
+obj\\Debug\WiXInstaller.wixproj.BindOutputsFileListnull.txt
+obj\\Debug\WiXInstaller.wixproj.BindBuiltOutputsFileListnull.txt
