@@ -4,6 +4,8 @@
 \\Mac\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP\WiXInstaller\bin\Debug\APIManagerInstaller.msi
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Debug\APIManagerInstaller.msi
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
 obj\\Debug\Files.wixobj
 obj\\Debug\Setup.wixobj
 obj\\Debug\WiXInstaller.wixproj.BindContentsFileListnull.txt

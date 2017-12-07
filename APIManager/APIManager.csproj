@@ -125,7 +125,6 @@
     <Compile Include="src\Application\CapabilityModel\API\APIProcessorSOAPItfBuilder.cs" />
     <Compile Include="src\Application\CapabilityModel\API\APIProcessorSchemaBuilder.cs" />
     <Compile Include="src\Application\CapabilityModel\API\ApplicationService.cs" />
-    <Compile Include="src\Application\CapabilityModel\ASCIIDoc\SpecificClassDocNode.cs" />
     <Compile Include="src\Application\CapabilityModel\SchemaGeneration\ClassCacheSlt.cs" />
     <Compile Include="src\Application\CapabilityModel\SchemaGeneration\ClassifierContext.cs" />
     <Compile Include="src\Application\CapabilityModel\API\Interface\CommonSchemaCapability.cs" />

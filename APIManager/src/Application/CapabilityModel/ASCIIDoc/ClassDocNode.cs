@@ -54,7 +54,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             this._contextID = contextID;
             this._myContext = parent;
             string indent = string.Empty;
-            for (int i = 0; i < level - 1; indent += "=", i++) ;
+            for (int i = 0; i < level; indent += "=", i++) ;
 
             this._ASCIIDoc = context.GetResourceString(isEmpty? FrameworkSettings._ASCIIDocEmptyClassTemplate: FrameworkSettings._ASCIIDocClassTemplate);
             this._ASCIIDoc = this._ASCIIDoc.Replace("@CLASSNAME@", name);
