@@ -101,6 +101,7 @@ C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newt
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\ClosedXML.pdb
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newtonsoft.Json.xml
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newtonsoft.Json.Schema.xml
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.csprojResolveAssemblyReference.cache
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.SparxEA.Properties.Resources.resources
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AboutBox.resources
 C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AccessLevelForm.resources

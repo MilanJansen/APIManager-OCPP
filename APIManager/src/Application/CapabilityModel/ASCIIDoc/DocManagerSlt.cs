@@ -159,6 +159,15 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                 // For the Message-specific definitions, we create a separate file.
             	using (writer = new StreamWriter(absolutePath + "\\" + "Specific_" + baseFileName + extension, false, Encoding.UTF8))
                 {
+            		writer.Write( 	":numbered: \n" + 
+									":toc: macro \n\n" +									
+									"= OCPP 2.X: Messages \n" +
+									"v0.8 DRAFT, 2017-02-09 \n" +
+									":title-logo-image: ../../style/media/logo.png \n\n" +									
+									"Copyright © 2010 – 2017 Open Charge Alliance. All rights reserved. \n\n" +									
+									"This document is made available under the _*Creative Commons Attribution-NoDerivatives 4.0 International Public License*_ (https://creativecommons.org/licenses/by-nd/4.0/legalcode). \n\n" +
+            						"== Message-specific Data Types \n\n"
+            					);
             		this._specificDatatypes.ForEach(writer.Write);                    
                     writer.Close();
                 }               

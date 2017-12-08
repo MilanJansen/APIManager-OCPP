@@ -169,7 +169,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     {
                         if (!this._currentMessage.MessageClasses.ContainsKey(className))
                         {
-                            this._currentNode = new ClassDocNode(this, this._contextID, className, notes, this._level + 2, isEmpty);
+                            this._currentNode = new ClassDocNode(this, this._contextID, className, notes, this._level + 1, isEmpty);
                             this._currentMessage.MessageClasses.Add(className, this._currentNode);
                         }
                         else this._currentNode = this._currentMessage.MessageClasses[className];
@@ -217,7 +217,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             string classTemplate = context.GetResourceString(FrameworkSettings._ASCIIDocMessageTemplate);
             string responseRole = context.GetConfigProperty(_ResponseMessageRoleName);
             string indent = string.Empty;
-            for (int i = 0; i < this._level + 1; indent += "=", i++) ;
+            for (int i = 0; i < this._level; indent += "=", i++) ;
 
             // Typically, the message name is simply the name of the message node. However, if we're dealing with the generic 'Request' or 'Response'
             // message, we replace this by the more meaningful name of 'operation'Request or 'operation'Response...
@@ -230,16 +230,16 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             {
                 msgName = this._name + context.GetConfigProperty(_ResponseMessageSuffix);
             }
-
-            messageTemplate = messageTemplate.Replace("@LVL@", indent);
-            messageTemplate = messageTemplate.Replace("@MESSAGEANCHOR@", msgName.ToLower());
-            messageTemplate = messageTemplate.Replace("@MESSAGENAME@", msgName);
-            messageTemplate = messageTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);
             
             classTemplate = classTemplate.Replace("@LVL@", indent);
             classTemplate = classTemplate.Replace("@MESSAGEANCHOR@", "spfc_" + msgName.ToLower());
             classTemplate = classTemplate.Replace("@MESSAGENAME@", msgName);
             classTemplate = classTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);
+
+            messageTemplate = messageTemplate.Replace("@LVL@", indent += "=");
+            messageTemplate = messageTemplate.Replace("@MESSAGEANCHOR@", msgName.ToLower());
+            messageTemplate = messageTemplate.Replace("@MESSAGENAME@", msgName);
+            messageTemplate = messageTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);   
 
             string msgClassContents = string.Empty;
             string msgBodyContents = string.Empty;
@@ -255,7 +255,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     
                     if (node.Name.Equals("RequestBodyType") || node.Name.Equals("ResponseBodyType")) {
                     	msgBodyContents = node.ASCIIDoc + _ClassDocNode;
-						msgBodyContents = msgBodyContents.Replace("===== " + node.Name, string.Empty);                    	
+						msgBodyContents = msgBodyContents.Replace("==== " + node.Name, string.Empty);                    	
                     	msgClassContents = msgClassContents.Replace(_ClassDocNode, string.Empty);                    	
                     }
                     
