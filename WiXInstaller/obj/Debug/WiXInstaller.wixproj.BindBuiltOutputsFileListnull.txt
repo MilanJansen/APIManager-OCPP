@@ -1,2 +1,0 @@
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Debug\APIManagerInstaller.msi
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Debug\APIManagerInstaller.wixpdb
