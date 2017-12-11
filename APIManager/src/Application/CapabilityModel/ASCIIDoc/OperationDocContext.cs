@@ -255,8 +255,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     
                     if (node.Name.Equals("RequestBodyType") || node.Name.Equals("ResponseBodyType")) {
                     	msgBodyContents = node.ASCIIDoc + _ClassDocNode;
-						msgBodyContents = msgBodyContents.Replace("==== " + node.Name, string.Empty);                    	
-                    	msgClassContents = msgClassContents.Replace(_ClassDocNode, string.Empty);                    	
+						msgBodyContents = msgBodyContents.Replace("==== " + node.Name, string.Empty);                    	                   	
                     }
                     
                     else {
