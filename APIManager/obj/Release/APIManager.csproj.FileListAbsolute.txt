@@ -1,128 +1,40 @@
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\resources\EDSN-LDT-MappingTable.txt
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\resources\EventHandlerConfig.xml
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\resources\EventHandlerConfig.xsd
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\APIManager.dll.config
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\APIManager.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\APIManager.pdb
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\APIManager.tlb
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\ClosedXML.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\Interop.EA.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\Newtonsoft.Json.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\Newtonsoft.Json.Schema.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\SVGExport.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\ClosedXML.pdb
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\Newtonsoft.Json.xml
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\bin\Release\Newtonsoft.Json.Schema.xml
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\APIManager.csprojResolveAssemblyReference.cache
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\APIManager.SparxEA.Properties.Resources.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AboutBox.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AccessLevelForm.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AddCodeListInput.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AddInterfaceInput.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RESTResourceDialogDEPRECATED.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RESTParameterDialog.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RESTOperationDialog.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ClassInspector.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RESTCreateResourcesDialog.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CapabilityProcessorPicker.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ChangeMajorVersion.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CodeListDirector.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CapabilityPicker.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CodeListPicker.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CodeListEnumPicker.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CapabilityDocumentation.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CollectAnnotation.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ConfirmOperationChanges.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CreateCodeListDeclaration.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CreateRESTServiceDeclaration.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ProgressPanel.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RenameOperationInput.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AddOperationInput.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CreateSOAPServiceDeclaration.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RESTResourceDialog.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RESTAuthEditAPIKeys.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\APIManager.SparxEA.src.Application.Forms.RESTResponseManager.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.SettingsForm.resources
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\APIManager.csproj.GenerateResource.Cache
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\APIManager.dll
-\\psf\Home\UserData\Bedrijven\Customers\Enexis\ECDM ROOT\Sparx EA\Add-Ins\API Manager\APIManager\obj\Release\APIManager.pdb
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\resources\EDSN-LDT-MappingTable.txt
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\resources\EventHandlerConfig.xml
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\resources\EventHandlerConfig.xsd
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\APIManager.dll.config
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\APIManager.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\APIManager.pdb
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\APIManager.tlb
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\ClosedXML.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\DocumentFormat.OpenXml.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\Interop.EA.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\Newtonsoft.Json.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\Newtonsoft.Json.Schema.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\SVGExport.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\ClosedXML.pdb
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\Newtonsoft.Json.xml
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\bin\Release\Newtonsoft.Json.Schema.xml
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\APIManager.SparxEA.Properties.Resources.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AboutBox.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AccessLevelForm.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AddCodeListInput.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AddInterfaceInput.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ClassInspector.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CapabilityProcessorPicker.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ChangeMajorVersion.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CodeListDirector.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CapabilityPicker.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CodeListPicker.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CodeListEnumPicker.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CapabilityDocumentation.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CollectAnnotation.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ConfirmOperationChanges.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CreateCodeListDeclaration.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.ProgressPanel.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.RenameOperationInput.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.AddOperationInput.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.CreateSOAPServiceDeclaration.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\Plugin.Application.Forms.SettingsForm.resources
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\APIManager.csproj.GenerateResource.Cache
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\APIManager.dll
-\\Mac\Home\Documents\EA-Plugins\API Manager\APIManager\obj\Release\APIManager.pdb
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\resources\EDSN-LDT-MappingTable.txt
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\resources\EventHandlerConfig.xml
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\resources\EventHandlerConfig.xsd
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\APIManager.dll.config
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\APIManager.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\APIManager.pdb
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\APIManager.tlb
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\ClosedXML.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\DocumentFormat.OpenXml.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Interop.EA.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newtonsoft.Json.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newtonsoft.Json.Schema.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\ClosedXML.pdb
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newtonsoft.Json.xml
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\bin\Release\Newtonsoft.Json.Schema.xml
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.csprojResolveAssemblyReference.cache
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.SparxEA.Properties.Resources.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AboutBox.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AccessLevelForm.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AddCodeListInput.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AddInterfaceInput.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.ClassInspector.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CapabilityProcessorPicker.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.ChangeMajorVersion.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CodeListDirector.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CapabilityPicker.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CodeListPicker.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CodeListEnumPicker.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CapabilityDocumentation.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CollectAnnotation.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.ConfirmOperationChanges.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CreateCodeListDeclaration.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.ProgressPanel.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.RenameOperationInput.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.AddOperationInput.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.CreateSOAPServiceDeclaration.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\Plugin.Application.Forms.SettingsForm.resources
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.csproj.GenerateResource.Cache
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.dll
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\APIManager\obj\Release\APIManager.pdb
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\resources\EDSN-LDT-MappingTable.txt
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\resources\EventHandlerConfig.xml
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\resources\EventHandlerConfig.xsd
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\APIManager.dll.config
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\APIManager.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\APIManager.pdb
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\APIManager.tlb
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\ClosedXML.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\Interop.EA.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\Newtonsoft.Json.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\Newtonsoft.Json.Schema.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\SVGExport.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\ClosedXML.pdb
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\Newtonsoft.Json.xml
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\bin\Release\Newtonsoft.Json.Schema.xml
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\APIManager.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\APIManager.SparxEA.Properties.Resources.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.AboutBox.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.AccessLevelForm.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.AddCodeListInput.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.AddInterfaceInput.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.ClassInspector.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CapabilityProcessorPicker.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.ChangeMajorVersion.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CodeListDirector.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CapabilityPicker.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CodeListPicker.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CodeListEnumPicker.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CapabilityDocumentation.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CollectAnnotation.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.ConfirmOperationChanges.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CreateCodeListDeclaration.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.ProgressPanel.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.RenameOperationInput.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.AddOperationInput.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.CreateSOAPServiceDeclaration.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\Plugin.Application.Forms.SettingsForm.resources
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\APIManager.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\APIManager.dll
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\APIManager\obj\Release\APIManager.pdb

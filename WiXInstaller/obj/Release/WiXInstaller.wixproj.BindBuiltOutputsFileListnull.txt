@@ -1,2 +1,2 @@
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Release\APIManagerInstaller.msi
-C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Release\APIManagerInstaller.wixpdb
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\WiXInstaller\bin\Release\APIManagerInstaller.msi
+\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\WiXInstaller\bin\Release\APIManagerInstaller.wixpdb
