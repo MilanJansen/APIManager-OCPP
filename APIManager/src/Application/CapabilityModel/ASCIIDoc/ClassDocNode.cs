@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Framework.Model;
 using Framework.Context;
 using Framework.Logging;
+using Framework.Util;
 using Plugin.Application.CapabilityModel.SchemaGeneration;
 
 namespace Plugin.Application.CapabilityModel.ASCIIDoc
@@ -146,8 +147,8 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             {
                 DocManagerSlt docMgr = DocManagerSlt.GetDocManagerSlt();
                 formattedClassifier = docMgr.CommonDocContext.GetFormattedClassifier(ctx.Name);
-                if (formattedClassifier == string.Empty) formattedClassifier = this._myContext.GetFormattedClassifier(ctx.Name);
-                if (formattedClassifier == string.Empty) formattedClassifier = ctx.TypeName;
+                if (formattedClassifier == string.Empty) formattedClassifier = this._myContext.GetFormattedClassifier(ctx.Name);                
+                if (formattedClassifier == string.Empty) formattedClassifier = Conversions.ToCamelCase(ctx.TypeName);
             }
             if (formattedClassifier[0] == '|')
             {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Framework.Model;
 using Framework.Context;
 using Framework.Util.SchemaManagement;
+using Framework.Util;
 using Framework.Logging;
 
 namespace Plugin.Application.CapabilityModel.ASCIIDoc
@@ -100,6 +101,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                 if (facetList != null && facetList.Count > 0)
                 {
                     primName = TypeReplacement(primName, facetList);
+                    primName = Conversions.ToCamelCase(primName);
 
                     Tuple<string, string> facetInfo = StringRange(facetList);
                     if (facetInfo.Item1 != string.Empty)
@@ -125,8 +127,8 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     this._ASCIIDoc = this._ASCIIDoc.Replace(TypeToken, this._formattedType + TypeToken);
                 }
                 else
-                {
-                    this._formattedType = this._formattedType.Replace("@PRIMNAME@", primName);
+                {                	
+                	this._formattedType = this._formattedType.Replace("@PRIMNAME@", Conversions.ToCamelCase(primName));
                     this._formattedType = this._formattedType.Replace(FacetToken, string.Empty);
                     this._formattedType = this._formattedType.Replace(TypeNotesToken, string.Empty);
                     this._ASCIIDoc = this._ASCIIDoc.Replace(TypeToken, this._formattedType + TypeToken);

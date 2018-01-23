@@ -1,2 +1,0 @@
-\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\WiXInstaller\bin\Release\APIManagerInstaller.msi
-\\Mac\Home\Documents\EA-Plugins\API Manager-V2\APIManager-OCPP\WiXInstaller\bin\Release\APIManagerInstaller.wixpdb

@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using Framework.Context;
 using Framework.Logging;
+using Framework.Util;
 
 namespace Plugin.Application.CapabilityModel.ASCIIDoc
 {
@@ -82,7 +83,8 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             for (int i = 0; i < this._level; indent += "=", i++) ;               
             contents = contents.Replace("@LVL@", indent);
             contents = contents.Replace("@OPERATIONANCHOR@", this._name.ToLower());
-            contents = contents.Replace("@OPERATIONNAME@", this._name);
+            
+            contents = contents.Replace("@OPERATIONNAME@", Conversions.ToPascalCase(this._name));
             contents = contents.Replace("@OPERATIONNOTES@", this._headerText);
 
             // Build documentation structures for all messages...
@@ -221,7 +223,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
 
             // Typically, the message name is simply the name of the message node. However, if we're dealing with the generic 'Request' or 'Response'
             // message, we replace this by the more meaningful name of 'operation'Request or 'operation'Response...
-            string msgName = msgNode.Name;
+            string msgName = msgNode.Name;            
             if (msgNode.Name == context.GetConfigProperty(_RequestMessageRoleName)) 
             {
                 msgName = this._name + context.GetConfigProperty(_RequestMessageSuffix);
@@ -232,13 +234,13 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             }
             
             classTemplate = classTemplate.Replace("@LVL@", indent);
-            classTemplate = classTemplate.Replace("@MESSAGEANCHOR@", "spfc_" + msgName.ToLower());
-            classTemplate = classTemplate.Replace("@MESSAGENAME@", msgName);
+            classTemplate = classTemplate.Replace("@MESSAGEANCHOR@", "spfc_" + msgName.ToLower());            
+            classTemplate = classTemplate.Replace("@MESSAGENAME@", Conversions.ToPascalCase(msgName));
             classTemplate = classTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);
 
             messageTemplate = messageTemplate.Replace("@LVL@", indent += "=");
-            messageTemplate = messageTemplate.Replace("@MESSAGEANCHOR@", msgName.ToLower());
-            messageTemplate = messageTemplate.Replace("@MESSAGENAME@", msgName);
+            messageTemplate = messageTemplate.Replace("@MESSAGEANCHOR@", msgName.ToLower());			            
+            messageTemplate = messageTemplate.Replace("@MESSAGENAME@", Conversions.ToPascalCase(msgName));            
             messageTemplate = messageTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);   
 
             string msgClassContents = string.Empty;

@@ -24,6 +24,7 @@ namespace Framework.Util.SchemaManagement.JSON
         private SortedList<string, JSONPrimitiveType> _primitiveTypes;  // These are all primitive types defined for this schema.
         private SortedList<string, JSchema> _rootClasses;               // These are all root class properties, added through 'addElement'.
         private string _rootClassifierName;
+        private string _ns;
 
         /// <summary>
         /// Schema constructor.
@@ -35,6 +36,7 @@ namespace Framework.Util.SchemaManagement.JSON
         {
             this._schema = null;
             this._id = null;
+            this._ns = null;
             this._externalSchemas = null;
             this._classes = null;
             this._classifiers = null;
@@ -75,6 +77,10 @@ namespace Framework.Util.SchemaManagement.JSON
                 Type = JSchemaType.Object,
                 AllowAdditionalProperties = false
             };
+            if(!className.Equals("RequestBodyType") && !className.Equals("ResponseBodyType")) {
+            	string javaType = className.Replace("Type", "");
+            	newType.ExtensionData.Add("javaType", javaType);
+            }            
             var classKey = new SortableSchemaElement(newType, className);
 
             if (!this._classes.ContainsKey(classKey))
@@ -417,6 +423,7 @@ namespace Framework.Util.SchemaManagement.JSON
                 if (this._classifiers.Count > 0 && this._classes.Count > 0)
                 {
                     JObject definitions = new JObject();
+                    this._schema.ExtensionData.Add("comment", "OCPP draft 4 Schema");
                     this._schema.ExtensionData.Add("definitions", definitions);
                     foreach (string classifier in this._classifiers.Keys)
                         if (this._classifiers[classifier].IsReferenceType) definitions.Add(classifier, this._classifiers[classifier].ReferenceClassifier);
@@ -534,13 +541,13 @@ namespace Framework.Util.SchemaManagement.JSON
                                  ns + "' and version: '" + version + "'...");
 
                 ContextSlt context = ContextSlt.GetContextSlt();
-                this._id = new Uri(ns, UriKind.Absolute);
+                this._ns = ns;
+                this._id = new Uri(ns, UriKind.Absolute);				           
                 this._skeletonSchema = new JSchema()
-                {
-                    SchemaVersion = new Uri(context.GetConfigProperty(_JSONSchemaStdNamespace)),
-                    Id = this._id,
-                    //Title = name,
-                    AllowAdditionalProperties = false
+                {                	                    
+                	SchemaVersion = new Uri(context.GetConfigProperty(_JSONSchemaStdNamespace)),                	
+                    Id = this._id,        
+                    AllowAdditionalProperties = false                    
                 };
 
                 if (type != SchemaType.Collection)
@@ -635,17 +642,25 @@ namespace Framework.Util.SchemaManagement.JSON
                 }
 
                 this.Build();   // Make sure that we have something to save.
-
+                string idExtension = this._rootClassifierName;                
+                if(this._rootClassifierName.Equals("RequestBodyType")) {
+                	idExtension = "Request";
+                }
+                else if(this._rootClassifierName.Equals("ResponseBodyType")) {
+                	idExtension = "Response";
+                }
+                this._schema.Id = new Uri(this._schema.Id.ToString() + idExtension, UriKind.Absolute);
                 // Next, we actually are going to create the schema...
                 using (var streamWriter = new StreamWriter(stream, Encoding.UTF8))
                 using (var jsonWriter = new JsonTextWriter(streamWriter))
-                {
+                {               	
+                	
                     jsonWriter.Formatting = Formatting.Indented;
                     jsonWriter.DateFormatHandling = DateFormatHandling.IsoDateFormat;
                     jsonWriter.DateTimeZoneHandling = DateTimeZoneHandling.Local;
                     this._schema.WriteTo(jsonWriter, new JSchemaWriterSettings
-                    {
-                        Version = Newtonsoft.Json.Schema.SchemaVersion.Draft4,
+                    {                        
+                        Version = Newtonsoft.Json.Schema.SchemaVersion.Draft6,
                         ExternalSchemas = extSchemaList,
                         ReferenceHandling = JSchemaWriterReferenceHandling.Always
                     });
