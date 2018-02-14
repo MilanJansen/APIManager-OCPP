@@ -118,8 +118,10 @@ namespace Framework.Util.SchemaManagement.JSON
                     {
                         // Complex classifier, we need to extend this instead of copy the contents...
                         Logger.WriteInfo("Framework.Util.SchemaManagement.JSON.JSONContentAttribute >> Constructed classifier, creating extension...");
-                        attribClassifier.AllOf.Add(classifier.ReferenceClassifier);
-                        simpleAttributeClassifier.AllOf.Add(classifier.ReferenceClassifier);
+                        //attribClassifier.AllOf.Add(classifier.ReferenceClassifier);
+                        //simpleAttributeClassifier.AllOf.Add(classifier.ReferenceClassifier);
+                        attribClassifier = classifier.ReferenceClassifier;
+                        simpleAttributeClassifier = classifier.ReferenceClassifier;
                     }
                     else
                     {
@@ -296,7 +298,8 @@ namespace Framework.Util.SchemaManagement.JSON
                         // This is probably an enum. Create a reference to it...
                         //this._classifier = new JSchema { Title = classifier };
                         this._classifier = new JSchema();
-                        this._classifier.AllOf.Add(attribClassifier.ReferenceClassifier);
+                        //this._classifier.AllOf.Add(attribClassifier.ReferenceClassifier);
+						this._classifier = attribClassifier.ReferenceClassifier;                         
                         this.IsValid = true;
                     }
                     else
