@@ -95,7 +95,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
         /// <param name="sourceScope">Human-readable identification of the source scope (where is it defined).</param>
         /// <param name="sourceName">Source human-readable name.</param>
         internal void AddXREF(string target, string sourceContextID, string sourceScope, string sourceName)
-        {
+        {        	
             string anchor = sourceContextID.ToLower() + "_" + sourceName.ToLower();
             if (!this._xrefList.ContainsKey(target)) this._xrefList.Add(target, new CrossReference(target));
             this._xrefList[target].AddReference(anchor, sourceScope + sourceName);

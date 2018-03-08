@@ -39,7 +39,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
         /// </summary>
         /// <returns>ASCIIDoc formatted list of 'used by' pointers.</returns>
         private string GetReferenceText()
-        {
+        {   string sourceRef = "";
             ContextSlt context = ContextSlt.GetContextSlt();
             string xrefLine = context.GetConfigProperty(_ASCIIDocXREF);
             xrefLine = xrefLine.Replace("@NAME@", this._itemName);
@@ -47,7 +47,9 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             bool firstOne = true;
             foreach (Tuple<string, string> src in this._references.Values)
             {
-                xrefItems += (firstOne ? "<<" : ", <<") + src.Item1 + "," + src.Item2 + ">> ";
+                sourceRef = src.Item2.Replace(".RequestBodyType", "");
+        	    sourceRef = sourceRef.Replace(".ResponseBodyType", "");
+                xrefItems += (firstOne ? "<<" : ", <<") + src.Item1 + "," + sourceRef + ">> ";
                 firstOne = false;
             }
             xrefLine = xrefLine.Replace("@XREF@", xrefItems);

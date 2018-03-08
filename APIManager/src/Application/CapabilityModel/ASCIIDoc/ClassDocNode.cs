@@ -176,8 +176,8 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
         /// </summary>
         /// <param name="references">List of cross-references for this class document node.</param>
         internal void AddXREF(CrossReference references)
-        {
-            this._ASCIIDoc = this._ASCIIDoc.Replace("@XREF@", references.ReferenceText);
+        {        	
+        	this._ASCIIDoc = this._ASCIIDoc.Replace("@XREF@", references.ReferenceText);
             Logger.WriteInfo("Plugin.Application.CapabilityModel.ASCIIDoc.ClassDocNode.AddXREF >> Added list: '" + references.ReferenceText + "'.");
         }
 

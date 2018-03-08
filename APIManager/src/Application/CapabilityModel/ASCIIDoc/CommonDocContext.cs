@@ -114,6 +114,28 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             }
             else this._currentNode = this._commonClasses[className];
         }
+        
+        /// <summary>
+        /// Adds message-specific datatypes to the common context.
+        /// </summary>
+        internal void AddDatatypes(SortedList<string, ClassDocNode> classList) {
+        	string className = "";
+        	foreach(ClassDocNode node in classList) {
+        		className = classList.Keys[classList.Values.IndexOf(node)];
+        		this._commonClasses.Add(className, node);
+        	}
+        }
+        
+        /// <summary>
+        /// Adds source references of message-specific datatypes to the common context.
+        /// </summary>
+        internal void AddReferences(SortedList<string, CrossReference> referenceList) {
+        	string key = "";
+        	foreach(CrossReference reference in referenceList) {
+        		key = referenceList.Keys[referenceList.Values.IndexOf(reference)];
+        		this._xrefList.Add(key, reference);
+        	}
+        }
 
         /// <summary>
         /// For the Common context, classifiers are defined at level 1.

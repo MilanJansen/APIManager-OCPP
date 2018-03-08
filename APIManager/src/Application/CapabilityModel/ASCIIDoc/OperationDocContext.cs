@@ -245,6 +245,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
 
             string msgClassContents = string.Empty;
             string msgBodyContents = string.Empty;
+            SortedList<string, ClassDocNode> dataTypeList;
             if (classList.Count > 1 || (classList.Count == 1 && !classList.Values[0].Empty))
             {
                 // Build documentation for message-specific classes...
@@ -253,7 +254,9 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                 bool firstOne = true;
                 foreach (ClassDocNode node in classList.Values)
                 {
-                    if (this._xrefList.ContainsKey(node.Name)) node.AddXREF(this._xrefList[node.Name]);
+                	if (this._xrefList.ContainsKey(node.Name)) {                		
+                		node.AddXREF(this._xrefList[node.Name]);
+                	}
                     
                     if (node.Name.Equals("RequestBodyType") || node.Name.Equals("ResponseBodyType")) {
                     	msgBodyContents = node.ASCIIDoc + _ClassDocNode;
@@ -261,13 +264,15 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     }
                     
                     else {
+                		string key = classList.Keys[classList.Values.IndexOf(node)];
+                		dataTypeList.Add(key, node);
                     	msgClassContents = msgClassContents.Replace(_ClassDocNode, firstOne ? node.ASCIIDoc + _ClassDocNode :
                                                                                           Environment.NewLine + node.ASCIIDoc + _ClassDocNode);
                     	firstOne = false;
                     }
                 }                
                 msgClassContents = msgClassContents.Replace(_ClassDocNode, string.Empty);                
-                if(classList.Count != 1) this._docManagerSlt.SaveSpecificData(classTemplate.Replace("@ASCIIDocMessageClasses@", msgClassContents));
+                if(classList.Count != 1) this._docManagerSlt.SaveSpecificData(classTemplate.Replace("@ASCIIDocMessageClasses@", msgClassContents), dataTypeList, this._xrefList);
             }                        
             msgBodyContents = msgBodyContents.Replace(_ClassDocNode, string.Empty);
             messageTemplate = messageTemplate.Replace("@ASCIIDocMessageClasses@", msgBodyContents);
