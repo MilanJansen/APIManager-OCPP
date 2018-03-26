@@ -58,11 +58,11 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                 cmnClassContents = cmnClassContents.Replace("@TITLE@", "Common Classes");
                 bool firstOne = true;
                 foreach (ClassDocNode node in this._commonClasses.Values)
-                {
-                    if (this._xrefList.ContainsKey(node.Name)) node.AddXREF(this._xrefList[node.Name]);
+                {                  	
+                	if (this._xrefList.ContainsKey(node.Name)) node.AddXREF(this._xrefList[node.Name]); 
                     cmnClassContents = cmnClassContents.Replace(_ClassDocNode, firstOne? node.ASCIIDoc + _ClassDocNode : 
                                                                                          Environment.NewLine + node.ASCIIDoc + _ClassDocNode);
-                    firstOne = false;
+                    firstOne = false;                    
                 }
                 cmnClassContents = cmnClassContents.Replace(_ClassDocNode, string.Empty);
             }
@@ -118,24 +118,15 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
         /// <summary>
         /// Adds message-specific datatypes to the common context.
         /// </summary>
-        internal void AddDatatypes(SortedList<string, ClassDocNode> classList) {
-        	string className = "";
-        	foreach(ClassDocNode node in classList) {
-        		className = classList.Keys[classList.Values.IndexOf(node)];
-        		this._commonClasses.Add(className, node);
+        internal void AddDatatypes(IList<ClassDocNode> classList) {
+        	string className = "";        	
+        	foreach(ClassDocNode node in classList) {        		
+        		className = node.Name;
+        		if(!this._commonClasses.ContainsKey(className)) {
+        			this._commonClasses.Add(className, node);        			        			
+        		}         		
         	}
-        }
-        
-        /// <summary>
-        /// Adds source references of message-specific datatypes to the common context.
-        /// </summary>
-        internal void AddReferences(SortedList<string, CrossReference> referenceList) {
-        	string key = "";
-        	foreach(CrossReference reference in referenceList) {
-        		key = referenceList.Keys[referenceList.Values.IndexOf(reference)];
-        		this._xrefList.Add(key, reference);
-        	}
-        }
+        }  
 
         /// <summary>
         /// For the Common context, classifiers are defined at level 1.

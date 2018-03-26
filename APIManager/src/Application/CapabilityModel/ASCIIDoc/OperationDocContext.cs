@@ -171,7 +171,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     {
                         if (!this._currentMessage.MessageClasses.ContainsKey(className))
                         {
-                            this._currentNode = new ClassDocNode(this, this._contextID, className, notes, this._level + 1, isEmpty);
+                            this._currentNode = new ClassDocNode(this, this._contextID, className, notes, this._level, isEmpty);
                             this._currentMessage.MessageClasses.Add(className, this._currentNode);
                         }
                         else this._currentNode = this._currentMessage.MessageClasses[className];
@@ -183,7 +183,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     // These are classes that are common for all messages within the same operation.
                     if (!this._commonClasses.ContainsKey(className))
                     {
-                        this._currentNode = new ClassDocNode(this, this._contextID, className, notes, this._level + 2, isEmpty);
+                        this._currentNode = new ClassDocNode(this, this._contextID, className, notes, this._level, isEmpty);
                         this._commonClasses.Add(className, this._currentNode);
                     }
                     else this._currentNode = this._commonClasses[className];
@@ -238,14 +238,14 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
             classTemplate = classTemplate.Replace("@MESSAGENAME@", Conversions.ToPascalCase(msgName));
             classTemplate = classTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);
 
-            messageTemplate = messageTemplate.Replace("@LVL@", indent += "=");
+            messageTemplate = messageTemplate.Replace("@LVL@", indent + "=");
             messageTemplate = messageTemplate.Replace("@MESSAGEANCHOR@", msgName.ToLower());			            
             messageTemplate = messageTemplate.Replace("@MESSAGENAME@", Conversions.ToPascalCase(msgName));            
             messageTemplate = messageTemplate.Replace("@MESSAGENOTES@", msgNode.Notes);   
 
             string msgClassContents = string.Empty;
             string msgBodyContents = string.Empty;
-            SortedList<string, ClassDocNode> dataTypeList;
+            var dataTypeList = new SortedList<string, ClassDocNode>();
             if (classList.Count > 1 || (classList.Count == 1 && !classList.Values[0].Empty))
             {
                 // Build documentation for message-specific classes...
@@ -260,7 +260,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     
                     if (node.Name.Equals("RequestBodyType") || node.Name.Equals("ResponseBodyType")) {
                     	msgBodyContents = node.ASCIIDoc + _ClassDocNode;
-						msgBodyContents = msgBodyContents.Replace("==== " + node.Name, string.Empty);                    	                   	
+						msgBodyContents = msgBodyContents.Replace("=== " + node.Name, string.Empty);                    	                   	
                     }
                     
                     else {
@@ -272,7 +272,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                     }
                 }                
                 msgClassContents = msgClassContents.Replace(_ClassDocNode, string.Empty);                
-                if(classList.Count != 1) this._docManagerSlt.SaveSpecificData(classTemplate.Replace("@ASCIIDocMessageClasses@", msgClassContents), dataTypeList, this._xrefList);
+                if(classList.Count != 1) this._docManagerSlt.SaveSpecificData(classTemplate.Replace("@ASCIIDocMessageClasses@", msgClassContents), dataTypeList);
             }                        
             msgBodyContents = msgBodyContents.Replace(_ClassDocNode, string.Empty);
             messageTemplate = messageTemplate.Replace("@ASCIIDocMessageClasses@", msgBodyContents);

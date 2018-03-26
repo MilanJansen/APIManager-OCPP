@@ -25,7 +25,7 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
 
         private CommonDocContext _commonContext;                        // We have exactly one (optional) common context.
         private SortedList<string, OperationDocContext> _operations;    // ..and a list of operations.
-        private List<string> _specificDatatypes;                        // A list of message specific datatypes
+        //private List<string> _specificDatatypes;                        // A list of message specific datatypes
         private int _level;                                             // Defines the starting level for the documentation structure.
         
         /// <summary>
@@ -46,18 +46,17 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
         internal void Flush()
         {
             this._operations = new SortedList<string, OperationDocContext>();
-            this._specificDatatypes = new List<string>(); 
+            //this._specificDatatypes = new List<string>(); 
             this._commonContext = null;
         }
         
         /// <summary>
         /// This method saves the message specific datatypes for later use in the master save.
         /// </summary>
-        internal void SaveSpecificData(string specificData, SortedList<string, ClassDocNode> classList, SortedList<string, CrossReference> referenceList)
+        internal void SaveSpecificData(string specificData, SortedList<string, ClassDocNode> classList)
         {
-        	this._commonContext.AddDatatypes(classList);
-        	this._commonContext.AddReferences(referenceList);
-            this._specificDatatypes.Add(specificData);
+        	this._commonContext.AddDatatypes(classList.Values);        	
+            //this._specificDatatypes.Add(specificData);
         }
 
         /// <summary>
@@ -152,27 +151,27 @@ namespace Plugin.Application.CapabilityModel.ASCIIDoc
                 if (this._commonContext != null)
                 {
                     // For the Common definitions, we create a separate file, since it will be a separate chapter.
-                    using (writer = new StreamWriter(absolutePath + "\\" + "03_Common-Datatypes" + extension, false, Encoding.UTF8))
+                    using (writer = new StreamWriter(absolutePath + "\\" + "02_Common-Datatypes" + extension, false, Encoding.UTF8))
                     {
                         this._commonContext.Save(writer);
                         writer.Close();
                     }
                 }    
                 // For the Message-specific definitions, we create a separate file.
-            	using (writer = new StreamWriter(absolutePath + "\\" + "02_Specific-Datatypes" + extension, false, Encoding.UTF8))
-                {
-            		writer.Write( 	":numbered: \n" + 
-									":toc: macro \n\n" +									
-									"= OCPP 2.X: Messages \n" +
-									"v0.8 DRAFT, 2017-02-09 \n" +
-									":title-logo-image: ../../style/media/logo.png \n\n" +									
-									"Copyright © 2010 – 2018 Open Charge Alliance. All rights reserved. \n\n" +									
-									"This document is made available under the _*Creative Commons Attribution-NoDerivatives 4.0 International Public License*_ (https://creativecommons.org/licenses/by-nd/4.0/legalcode). \n\n" +
-            						"== Message-specific Data Types \n\n"
-            					);
-            		this._specificDatatypes.ForEach(writer.Write);                    
-                    writer.Close();
-                }               
+//            	using (writer = new StreamWriter(absolutePath + "\\" + "02_Specific-Datatypes" + extension, false, Encoding.UTF8))
+//                {
+//            		writer.Write( 	":numbered: \n" + 
+//									":toc: macro \n\n" +									
+//									"= OCPP 2.X: Messages \n" +
+//									"v0.8 DRAFT, 2017-02-09 \n" +
+//									":title-logo-image: ../../style/media/logo.png \n\n" +									
+//									"Copyright © 2010 – 2018 Open Charge Alliance. All rights reserved. \n\n" +									
+//									"This document is made available under the _*Creative Commons Attribution-NoDerivatives 4.0 International Public License*_ (https://creativecommons.org/licenses/by-nd/4.0/legalcode). \n\n" +
+//            						"== Message-specific Data Types \n\n"
+//            					);
+//            		this._specificDatatypes.ForEach(writer.Write);                    
+//                    writer.Close();
+//                }               
             }
             catch (Exception exc)
             {

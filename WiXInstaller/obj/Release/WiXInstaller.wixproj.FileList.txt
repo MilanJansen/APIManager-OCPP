@@ -5,3 +5,5 @@ obj\\Release\Setup.wixobj
 obj\\Release\WiXInstaller.wixproj.BindContentsFileListnull.txt
 obj\\Release\WiXInstaller.wixproj.BindOutputsFileListnull.txt
 obj\\Release\WiXInstaller.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Release\APIManagerInstaller.msi
+C:\Users\jansenml\Documents\Elaad\APIManager-OCPP-V2\WiXInstaller\bin\Release\APIManagerInstaller.wixpdb
