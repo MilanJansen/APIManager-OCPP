@@ -414,7 +414,7 @@ namespace Framework.Util.SchemaManagement.JSON
 				// [CustomData] Changed for OCPP:
 				// We always create a 'definitions' section, so that we can later add CustomData in post-processing script even when definitions section is empty.
 				JObject definitions = new JObject();
-				this._schema.ExtensionData.Add("comment", "OCPP draft 4 Schema");
+				this._schema.ExtensionData.Add("comment", "Errata sheet - release candidate");
 				this._schema.ExtensionData.Add("definitions", definitions);
 				
 				if (this._classifiers.Count > 0 && this._classes.Count > 0) {
