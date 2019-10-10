@@ -127,7 +127,7 @@ namespace Framework.Util.SchemaManagement.JSON
 						if (!choiceList.ContainsKey(contentAttrib.ChoiceGroupID)) {
 							Logger.WriteInfo("Framework.Util.SchemaManagement.JSON.JSONSchema.addABIEType >> Creating new Choice with name: " + contentAttrib.ChoiceGroupID);
 							var newChoice = new JSONChoice(this, contentAttrib.ChoiceGroupID);
-							choiceList.Add(contentAttrib.ChoiceGroupID, newChoice);
+							choiceList.Add(contentAttrib.ChoiceGroupID, newChoice);							
 						}
 						Logger.WriteInfo("Framework.Util.SchemaManagement.JSON.JSONSchema.addABIEType >> Adding attribute '" + contentAttrib.Name +
 						"' to Choice Group '" + contentAttrib.ChoiceGroupID + "'...");

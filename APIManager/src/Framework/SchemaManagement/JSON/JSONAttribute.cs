@@ -107,7 +107,7 @@ namespace Framework.Util.SchemaManagement.JSON
                 // version that does not have these. We can't assign one to the other since in the end out variables are all pointers!
                 // WME 20171130: OCPP Remove Title from Classifiers
                 //var attribClassifier = new JSchema { Title = classifierName };
-                var attribClassifier = new JSchema();
+                var attribClassifier = new JSchema();                                
                 var simpleAttributeClassifier = new JSchema();
                 this._classifier = classifier;
 
@@ -299,7 +299,7 @@ namespace Framework.Util.SchemaManagement.JSON
                         //this._classifier = new JSchema { Title = classifier };
                         this._classifier = new JSchema();
                         //this._classifier.AllOf.Add(attribClassifier.ReferenceClassifier);
-						this._classifier = attribClassifier.ReferenceClassifier;                         
+						this._classifier = attribClassifier.ReferenceClassifier; 											
                         this.IsValid = true;
                     }
                     else

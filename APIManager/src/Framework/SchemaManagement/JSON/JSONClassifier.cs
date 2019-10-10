@@ -94,6 +94,9 @@ namespace Framework.Util.SchemaManagement.JSON
                     Type = (attribList.Count > 0) ? JSchemaType.Object : JSchemaType.String,
                     AllowAdditionalProperties = false
                 };
+                
+                string javaType = classifierName.Replace("Type", "");
+				this._constructedClassifier.ExtensionData.Add("javaType", javaType);	
 
                 foreach (EnumerationItem enumItem in enumList) this._constructedClassifier.Enum.Add(new JValue(enumItem.Name));
 

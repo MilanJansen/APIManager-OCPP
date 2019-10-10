@@ -113,6 +113,7 @@ namespace Framework.Util.SchemaManagement.JSON
                 {
                     { sortKey, jsonAttribute }
                 };
+                
                 this._choices.Add(jsonAttribute.ChoiceGroupSequenceID, newList);
                 this._mandatoryList.Add(jsonAttribute.ChoiceGroupSequenceID, attribute.IsMandatory);
             }
@@ -142,9 +143,9 @@ namespace Framework.Util.SchemaManagement.JSON
             {
                 //Title = this.Name + "ChoiceType",
                 Type = JSchemaType.Object,
-                AllowAdditionalProperties = false
+                AllowAdditionalProperties = false 
             };
-
+			
             foreach (KeyValuePair<string, SortedList<SortableSchemaElement, IJSONProperty>> sequence in this._choices)
             {
                 // Given the construction of choices in JSON, each 'leg' (sequence) of the choice will get it's own schema, independent of the number

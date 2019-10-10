@@ -279,7 +279,7 @@ namespace Plugin.Application.CapabilityModel.SchemaGeneration
                         Logger.WriteInfo("Plugin.Application.CapabilityModel.SchemaGeneration.SchemaProcessor.ProcessAttributes >> Supplementary attribute.");
                         if (classifierCtx.ContentType == ClassifierContext.ContentTypeCode.Simple || classifierCtx.ContentType == ClassifierContext.ContentTypeCode.Enum)
                         {
-                            string defaultVal = attribute.DefaultValue;
+                            string defaultVal = attribute.DefaultValue;                        
                             bool isOptional = attribute.IsOptional;
                             bool classifierInSchemaNS = classifierCtx.SchemaScope != ClassifierContext.ScopeCode.Remote;
 
