@@ -144,11 +144,26 @@ namespace Framework.Util.SchemaManagement.JSON
                     }
 
                     if (defaultValue != string.Empty)
-                    {
+                    {                        
                         Logger.WriteInfo("Framework.Util.SchemaManagement.JSON.JSONContentAttribute >> Attribute has default value: " + defaultValue);
-                        attribClassifier.Default = new JValue(defaultValue);
-                        simpleAttributeClassifier.Default = new JValue(defaultValue);
-                    }
+                        if(defaultValue.Equals("false"))
+                        {
+                           	attribClassifier.Default = new JValue(false);
+                           	simpleAttributeClassifier.Default = new JValue(false);
+                        }
+                        else if(defaultValue.Equals("true")) {
+                        	attribClassifier.Default = new JValue(true);
+                           	simpleAttributeClassifier.Default = new JValue(true);
+                        }
+                        else if(defaultValue.Equals("0")) {
+                        	attribClassifier.Default = new JValue(0);
+                           	simpleAttributeClassifier.Default = new JValue(0);
+                        }
+                        else {
+                        	attribClassifier.Default = new JValue(defaultValue);
+                       		simpleAttributeClassifier.Default = new JValue(defaultValue);
+                        	}                        	
+                        }   
                 }
 
                 // If upper boundary of cardinality > 1 (or 0, which means unbounded), we have to create an array of type, instead of only the type.

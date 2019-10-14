@@ -417,10 +417,12 @@ namespace Framework.Util.SchemaManagement.JSON
 				this._schema.ExtensionData.Add("comment", "Errata sheet - release candidate");
 				this._schema.ExtensionData.Add("definitions", definitions);
 				
-				if (this._classifiers.Count > 0 && this._classes.Count > 0) {
+				if (this._classifiers.Count > 0) {
 					foreach (string classifier in this._classifiers.Keys)
 						if (this._classifiers[classifier].IsReferenceType)
-							definitions.Add(classifier, this._classifiers[classifier].ReferenceClassifier);
+							definitions.Add(classifier, this._classifiers[classifier].ReferenceClassifier);					
+				}
+				if (this._classes.Count > 0) {
 					foreach (SortableSchemaElement key in this._classes.Keys)
 						definitions.Add(key.Name, this._classes[key]);
 				}
